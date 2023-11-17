@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Prediction Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Machine Learning Prediction Website</h1>
+    <form action="/predict" method="post">
+        <label for="Application Type">Application Typle:</label>
+        <input type="text" id="Application Type" name="Application Type" required><br><br>
+
+        <label for="Signal Strength">Signal Strength:</label>
+        <input type="text" id="Signal Strength" name="Signal Strength" required><br><br>
+
+        <label for="Latency">Latency:</label>
+        <input type="text" id="Latency" name="Latency" required><br><br>
+
+        <label for="Required Bandwidth">Required Bandwidth:</label>
+        <input type="text" id="Required Bandwidth" name="Required Bandwidth" required><br><br>
+
+        <label for="Allocated Bandwidth">Allocated Bandwidth:</label>
+        <input type="text" id="Allocated Bandwidth" name="Allocated Bandwidth" required><br><br>
+
+        <!-- Add more input fields for other features if needed -->
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction:</h2>
+        <p>{{ prediction }}</p>
+    {% endif %}
+</body>
+</html>

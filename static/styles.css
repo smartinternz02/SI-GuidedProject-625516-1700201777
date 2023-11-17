@@ -1,0 +1,42 @@
+/* styles.css */
+head{
+        background-image: url('static/AI-ML-min-min-scaled.jpg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+form {
+    background: rgba(255, 255, 255, 0.7); 
+        padding: 50px;
+        border-radius: 25px;
+        margin: 10px auto;
+        width: 300px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+
+}
+label, input {
+    display: ruby-base;
+        margin-bottom: 1px;
+
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+
+}
+
+input[type="submit"] {
+    background-color: #0074d9; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
